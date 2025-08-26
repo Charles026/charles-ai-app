@@ -1,0 +1,27 @@
+/* WPS 灵犀标题样式 */
+.wps-lingxi-title {
+  position: relative;
+  width: 100%;
+  height: auto;
+  
+  font-family: 'PingFang SC', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  background: linear-gradient(0deg, rgba(221, 239, 255, 0.11), rgba(221, 239, 255, 0.11)), 
+              linear-gradient(90deg, rgba(253, 101, 240, 0.23) 0%, rgba(253, 101, 101, 0.9) 27.88%, #6A34FF 58.17%, rgba(10, 112, 228, 0.45) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-blend-mode: plus-lighter, normal;
+
+  /* 居中标题块 */
+  margin: 0 auto;
+}

@@ -1,0 +1,35 @@
+
+.blurCircleBlue {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: -300px;
+  top: -100px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(255, 49, 234, 0.20) 0%, rgba(30, 241, 255, 0.28) 100%);
+  filter: blur(50px);
+  transform: rotate(-150deg);
+  z-index: -100;
+}
+
+.blurCircleGreen {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    top: -200px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(255, 212, 104, 0.22) 0%, rgba(30, 241, 255, 0.22) 100%);
+    filter: blur(60px);
+    transform: rotate(30deg);
+    z-index: -100;
+}
+
+
+.iconWrapper {
+  color: var(--tc-color-text-primary);
+}
+
+.iconWrapper svg:hover {
+  opacity: 0.6;
+}
