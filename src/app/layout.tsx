@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Charles - UI/UX Designer Portfolio",
   description: "Charles - UI/UX Designer Portfolio",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/cat-head.svg",
   },
 };
 
