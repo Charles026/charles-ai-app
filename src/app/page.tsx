@@ -29,7 +29,7 @@ export default function Home() {
           </div>
           <div className='text-lg gap-4 leading-loose flex flex-col mt-4 animate-fade-in'>
             <p className='animate-fade-in'>
-              UI/UX Designer
+              AI Product Designer
             </p>
             <p className='animate-fade-in'>
               Currently @ Kingsoft Office KSUX Team.<br/>
