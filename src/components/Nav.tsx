@@ -10,10 +10,7 @@ const Nav = () => {
 
     // 实现一个返回跳转
     const router = useRouter()
-    const handleClick = (e: { preventDefault: () => void }) => {
-        e.preventDefault()
-        router.push('/')
-    }
+    // Note: we use Link for navigation; keep router for potential future use
 
 
     return (
