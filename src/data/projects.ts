@@ -8,9 +8,9 @@ export const projects = [
   },
 
   {
-    projectName: 'kingsoft-design-system',
+    projectName: 'kingsoft-office-design-system',
     coverImage: '/images/img-placeholder.webp',
-    projectTitle: 'Kingsoft Design System',
+    projectTitle: 'Kingsoft Office Design System',
     subtitle: '金山办公设计系统',
     tags: ['Design System', 'Design Engineering','2022-2023'],
   },
