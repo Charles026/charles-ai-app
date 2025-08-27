@@ -11,6 +11,9 @@ import Link from "next/link";
 import { projects } from "../data/projects";
 import ProjectCardList from "../components/ProjectCardList";
 
+import Sparkles from "@/components/icons/Sparkles";
+import ClientChatLauncher from "@/components/chat/ClientChatLauncher";
+
 export default function Home() {
   return (
     <div className='container xl:px-12 lg:px-8  md:px-6  flex flex-col  mx-auto lg:pt-16 xl:flex-row '>
@@ -54,7 +57,7 @@ export default function Home() {
             </Link>
             <Popover>
               <PopoverTrigger asChild> 
-                <button className="hover:text-primary">
+                <button className="hover:text-primary cursor-pointer">
                   <Weixin/>
                 </button>
               </PopoverTrigger>
@@ -72,6 +75,11 @@ export default function Home() {
                 </div>
               </PopoverContent>
             </Popover>
+
+            <ClientChatLauncher>
+              <Sparkles />
+            </ClientChatLauncher>
+
             </div>
             
             {/* Footer info moved here */}

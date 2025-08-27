@@ -43,6 +43,26 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+/* Sparkles twinkle animation */
+@keyframes sparkleTwinkle {
+  0% {
+    opacity: 0.65;
+  }
+  50% {
+    opacity: 1;
+
+  }
+  100% {
+    opacity: 0.65;
+  }
+}
+
+.sparkle-twinkle {
+  animation: sparkleTwinkle 1.8s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
