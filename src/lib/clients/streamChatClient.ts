@@ -70,7 +70,7 @@ export const streamChat = async ({
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let fullContent = '';
-    let displayContent = '';
+    // const displayContent = '';
     let accumulatedText = '';
 
     console.log('📖 Starting to read stream...');

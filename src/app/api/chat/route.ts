@@ -1,5 +1,4 @@
-import { createOpenAI } from '@ai-sdk/openai';
-import { streamText } from 'ai';
+// import { createOpenAI } from '@ai-sdk/openai';
 
 // IMPORTANT! Set the runtime to edge
 export const runtime = "edge";
@@ -58,10 +57,10 @@ export async function POST(req: Request) {
       return stream;
     }
 
-    const openrouter = createOpenAI({
-      baseURL: 'https://openrouter.ai/api/v1',
-      apiKey: apiKey,
-    });
+    // const openrouter = createOpenAI({
+    //   baseURL: 'https://openrouter.ai/api/v1',
+    //   apiKey: apiKey,
+    // });
 
     // 保证有 system prompt
     const sysPrompt = { role: "system", content: `Charles（陈传林）是一名聚焦 AI × Office 领域的体验设计领导者，现任 WPS 灵犀（Copilot）设计负责人。拥有十余年 UX 与视觉设计经验，擅长战略规划、体系化设计和落地迭代，能够持续驱动创新与增长。
@@ -108,7 +107,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         model: 'google/gemini-2.5-flash',
-        messages: fullMessages.map((m: any) => ({ role: m.role, content: m.content })),
+        messages: fullMessages.map((m: { role: string; content: string }) => ({ role: m.role, content: m.content })),
         temperature: 0.7,
         stream: false,
       })

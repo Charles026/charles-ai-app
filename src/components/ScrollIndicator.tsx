@@ -11,7 +11,7 @@ const ScrollIndicator = () => {
     // 重置滚动百分比
     setScrollPercentage(0);
 
-    const handleScroll = (event?: Event) => {
+    const handleScroll = () => {
       let scrollTop = 0;
       let scrollHeight = 0;
       let clientHeight = 0;

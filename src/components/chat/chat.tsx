@@ -41,7 +41,7 @@ export function Chat({ id, initialMessages = [], hideInput = false, onClose }: {
   const [inputContent, setInputContent] = useState<string>(initialInput);
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [messages, setMessages] = useState<Message[]>(initialMessages);
-  const [isContentLoading, setIsContentLoading] = useState<boolean>(false);
+  const [isContentLoading] = useState<boolean>(false);
 
   // Set slower typing speed on mount
   useEffect(() => {

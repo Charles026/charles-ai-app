@@ -1,8 +1,8 @@
 "use client";
-import { CheckIcon, CopyIcon } from "@radix-ui/react-icons";
+import { Check, Copy } from "lucide-react";
 import React from "react";
 import { CodeBlock, dracula, github } from "react-code-blocks";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { toast } from "sonner";
 
 interface ButtonCodeblockProps {
@@ -32,9 +32,9 @@ export default function CodeDisplayBlock({ code, lang }: ButtonCodeblockProps) {
         className="h-5 w-5 absolute top-2 right-2"
       >
         {isCopied ? (
-          <CheckIcon className="w-4 h-4 scale-100 transition-all" />
+          <Check className="w-4 h-4 scale-100 transition-all" />
         ) : (
-          <CopyIcon className="w-4 h-4 scale-100 transition-all" />
+          <Copy className="w-4 h-4 scale-100 transition-all" />
         )}
       </Button>
       <CodeBlock

@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './Nav.module.css'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 
 import Link from 'next/link'
 import ArrowLeft from './icons/ArrowLeft'
@@ -9,7 +9,7 @@ import ArrowLeft from './icons/ArrowLeft'
 const Nav = () => {
 
     // 实现一个返回跳转
-    const router = useRouter()
+    // const router = useRouter()
     // Note: we use Link for navigation; keep router for potential future use
 
 
