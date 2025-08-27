@@ -49,10 +49,25 @@ export async function POST(req: Request) {
       isDummy: apiKey === 'dummy-key-for-build' || apiKey === 'sk-or-v1-your-key-here' 
     });
     
-    if (forceMock || !apiKey || apiKey === 'dummy-key-for-build' || apiKey === 'sk-or-v1-your-key-here') {
+    if (forceMock || !apiKey || apiKey === 'dummy-key-for-build' || apiKey === 'sk-or-v1-your-key-here' || apiKey === 'your-actual-api-key-here') {
       console.log('Using mock stream response as no valid API key is present.');
       const lastUserMsg = messages.filter(m => m.role === 'user').pop()?.content || '';
-      const mockText = `This is a mock streamed response for your prompt: "${lastUserMsg}". Please set a real OPENROUTER_API_TOKEN to use the actual AI service.`;
+      const mockText = `哇！你问到陈传林，那可真是问对人了！🤩
+
+陈传林（Charles），可不是一般的设计师哦！他现在是 **WPS 灵犀（Copilot）的设计负责人**，专注于 AI × Office 领域的体验设计创新。
+
+💡 **他的超能力包括：**
+- 体验设计专家：十余年 UX 与视觉设计经验
+- 数据驱动决策：用数据说话，让设计更有说服力
+- Figma & ProtoPie 深度玩家：工具达人，效率拉满
+- 宠物猫 Mumu 的专业铲屎官 🐱
+- GLSL Shader 与新媒介艺术爱好者（技术宅属性暴露）
+- MBTI：INTP（典型的思考型人格）
+
+🚀 **最近的成就：**
+刚刚主导完成了 WPS 灵犀从 0 到 1 的整体产品设计，2024年6月上线后用户周留存超过30%，表现优于市场一线竞品！
+
+*注意：当前使用的是模拟回复。如需体验完整 AI 功能，请在 .env.local 文件中设置真实的 OPENROUTER_API_TOKEN。*`;
       const stream = createMockStream(mockText);
       return stream;
     }
@@ -103,7 +118,9 @@ export async function POST(req: Request) {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'HTTP-Referer': 'https://charles-ai-app.vercel.app',
+        'X-Title': 'Charles AI App'
       },
       body: JSON.stringify({
         model: 'google/gemini-2.5-flash',
@@ -111,6 +128,9 @@ export async function POST(req: Request) {
         temperature: 0.7,
         stream: false,
       })
+    }).catch(error => {
+      console.error('Fetch error:', error);
+      throw new Error(`Network request failed: ${error.message}`);
     });
 
     if (!completionRes.ok) {
