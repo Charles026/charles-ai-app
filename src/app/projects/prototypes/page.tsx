@@ -10,7 +10,7 @@ export default function ProjectPage() {
       {/* 页面最顶大标题 */}
       <div className="w-full px-4 sm:px-6 md:px-8 flex flex-col items-center justify-center mt-[80px] mb-[70px]">
         <h1 className="text-center mb-[28px]" style={{ fontSize:32 , fontWeight: 700 }}>Prototyping in WPS</h1>
-        <p className="text-center max-w-[1000px]">Protopie 是我最得力的原型设计工具，它让我能够快速构建交互原型并持续迭代优化。在 WPS，我制作了大量原型设计，这里精选了一些最具代表性的案例。这些原型主要使用 Protopie 完成，少数复杂交互则通过 JavaScript 实现。</p>
+        <p className="text-center max-w-[1000px]">ProtoPie 是我最得力的原型设计工具，它让我能够快速构建交互原型并持续迭代优化。在 WPS，我制作了大量原型设计，这里精选了一些最具代表性的案例。这些原型主要使用 Protopie 完成，少数复杂交互则通过 JavaScript 实现。</p>
       </div>
       {/* 版心内容 */}
       <div className="mx-auto px-4 sm:px-6 md:px-8 w-full" style={{ maxWidth: 1000 }}>
