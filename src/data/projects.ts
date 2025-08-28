@@ -24,7 +24,7 @@ export const projects = [
   },
   {
     projectName: 'https://workchd.com/',
-    coverImage: '/images/pass-work-cover.webp',
+    coverImage: '/pass-work-cover.webp',
     projectTitle: 'Archived Works',
     subtitle: '历史作品集',
     tags: ['UI', 'UX', 'Branding'],
