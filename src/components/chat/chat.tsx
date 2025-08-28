@@ -5,7 +5,7 @@ import { Message } from "@/lib/types";
 import { generateUUID } from "@/lib/utils";
 import { useCallback, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
-import { motion } from "framer-motion";
+
 import { streamChat, stopStreamChat, setTypingSpeedMs } from "@/lib/clients/streamChatClient";
 import { Spinner } from "./spinner";
 import { trackPageEvent } from "@/lib/analytics";
@@ -189,15 +189,8 @@ export function Chat({ id, initialMessages = [], hideInput = false, onClose }: {
           {/* 输入框固定在底部 */}
           {!hideInput && (
             <div className="flex-shrink-0">
-              <motion.div
-                key={messages.length > 0 ? 'has-messages' : 'no-messages'}
-                layout
-                initial={{ y: -12, opacity: 0.9  }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ type: 'spring', stiffness: 280, damping: 22, mass: 0.6 }}
-                className="w-full flex justify-center px-5 py-4"
-              >
-                <motion.div layout className="w-full" style={{ maxWidth: 700 }}>
+              <div className="w-full flex justify-center px-5 py-4">
+                <div className="w-full" style={{ maxWidth: 700 }}>
                   <ChatInput
                     chatId={id}
                     userInput={inputContent}
@@ -208,8 +201,8 @@ export function Chat({ id, initialMessages = [], hideInput = false, onClose }: {
                     appendAndTrigger={appendAndTrigger}
                     onStop={stopStreamChat}
                   />
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
           )}
         </>
@@ -257,10 +250,8 @@ export function Chat({ id, initialMessages = [], hideInput = false, onClose }: {
           {/* 输入框固定在底部 */}
           {!hideInput && (
             <div className="flex-shrink-0 ">
-              <motion.div
-                className="w-full flex justify-center px-5 py-4"
-              >
-                <motion.div className="w-full" style={{ maxWidth: 600 }}>
+              <div className="w-full flex justify-center px-5 py-4">
+                <div className="w-full" style={{ maxWidth: 600 }}>
                   <ChatInput
                     chatId={id}
                     userInput={inputContent}
@@ -271,8 +262,8 @@ export function Chat({ id, initialMessages = [], hideInput = false, onClose }: {
                     appendAndTrigger={appendAndTrigger}
                     onStop={stopStreamChat}
                   />
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
             </div>
           )}
         </>
