@@ -7,6 +7,7 @@ interface ProjectCardList {
         projectTitle: string;
         subtitle: string;
         tags: string[];
+        isExternalLink?: boolean;
     }[];
 }
 

@@ -10,15 +10,16 @@ interface Props {
     subtitle: string;
     tags: string[];
     key: string;
+    isExternalLink?: boolean;
   }
 
-const ProjectCard = ({ projectName,projectTitle,coverImage,tags,subtitle }: Props) => {
+const ProjectCard = ({ projectName, projectTitle, coverImage, tags, subtitle, isExternalLink }: Props) => {
 
     return (
         <div className='w-full lg:w-4/5 mx-auto xl:w-full'>
             <div className={`${styles.imageContainer}`}>
-            <Link  href={`/projects/${projectName}`}>
-                <Image  className="w-full h-full object-cover "
+            <Link href={isExternalLink ? projectName : `/projects/${projectName}`} target={isExternalLink ? "_blank" : undefined}>
+                <Image className="w-full h-full object-cover"
                 src={coverImage}
                 alt={`${projectName} Cover`}
                 width={600}
@@ -27,7 +28,7 @@ const ProjectCard = ({ projectName,projectTitle,coverImage,tags,subtitle }: Prop
             </Link>
             </div>
             <div className={styles.titleContainer}>
-            <Link href={`/projects/${projectName}`}>
+            <Link href={isExternalLink ? projectName : `/projects/${projectName}`} target={isExternalLink ? "_blank" : undefined}>
                 <h3 className={styles.title}>{projectTitle}</h3>
             </Link>
             <p className={styles.subtitle}>{subtitle}</p>

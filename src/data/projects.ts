@@ -1,5 +1,13 @@
 export const projects = [
   {
+    projectName: 'https://workchd.com/',
+    coverImage: '/images/img-placeholder.webp',
+    projectTitle: 'Archived Works',
+    subtitle: '历史作品集',
+    tags: ['UI', 'UX', 'Branding'],
+    isExternalLink: true,
+  },
+  {
     projectName: 'wps-lingxi',
     coverImage: '/images/lingxiPlaceholder.webp',
     projectTitle: 'WPS 灵犀',
