@@ -1,13 +1,5 @@
 export const projects = [
   {
-    projectName: 'https://workchd.com/',
-    coverImage: '/images/img-placeholder.webp',
-    projectTitle: 'Archived Works',
-    subtitle: '历史作品集',
-    tags: ['UI', 'UX', 'Branding'],
-    isExternalLink: true,
-  },
-  {
     projectName: 'wps-lingxi',
     coverImage: '/images/lingxiPlaceholder.webp',
     projectTitle: 'WPS 灵犀',
@@ -29,5 +21,13 @@ export const projects = [
     projectTitle: 'Prototypes',
     subtitle: '一些在 WPS 的 Prototype 制作',
     tags: ['Prototyping', 'Protopie', 'p5.js','2022-2025'],
+  },
+  {
+    projectName: 'https://workchd.com/',
+    coverImage: '/images/pass-work-cover.webp',
+    projectTitle: 'Archived Works',
+    subtitle: '历史作品集',
+    tags: ['UI', 'UX', 'Branding'],
+    isExternalLink: true,
   },
 ];
