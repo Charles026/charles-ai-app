@@ -47,7 +47,7 @@ export default function ChatMessage({ messages, isLoading }: ChatMessageProps) {
         ref={(node) => {
           containerRef.current = node;
         }}
-        className="w-full h-full overflow-x-hidden"
+        className="w-full overflow-x-hidden"
         onScroll={handleScroll}
       >
         <div className="w-full flex flex-col min-h-full justify-start  ">

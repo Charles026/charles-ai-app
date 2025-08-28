@@ -21,3 +21,5 @@ const ProjectCardList = ({ data }: ProjectCardList) => {
 };
 
 export default ProjectCardList;
+
+
