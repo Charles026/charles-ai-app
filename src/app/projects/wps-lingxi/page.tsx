@@ -353,17 +353,17 @@ export default function WpsLingxiReportPage() {
             长过程研究不可避免 → 通过可观测过程提升“在为我工作”的感知，并交付高质量产物。
             </li>
 
-                         <li><span className="font-semibold text-white">高成本请求的可控性</span><br />
+            <li><span className="font-semibold text-white">高成本请求的可控性</span><br />
              一次请求代价大 → 设计不中断体验、分层容错与降级，保障任务稳态完成。
              </li>
              </ol>
 
-             {/* Agent 双列图片展示 */}
-             <div className="mt-8 w-full grid grid-cols-1 sm:grid-cols-2 gap-6">
-               <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden">
+             {/* Agent 图片垂直展示 */}
+             <div className="mt-8 w-full space-y-6">
+               <div className="relative aspect-[2/1] rounded-[40px] overflow-hidden">
                  <Image src={agentProgress} alt="Agent Progress" fill className="object-cover" />
                </div>
-               <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden">
+               <div className="relative aspect-[2/1] rounded-[40px] overflow-hidden">
                  <Image src={agentResult} alt="Agent Result" fill className="object-cover" />
                </div>
              </div>
