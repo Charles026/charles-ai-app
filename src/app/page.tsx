@@ -35,10 +35,10 @@ export default function Home() {
               AI Product Designer
             </p>
             <p className='animate-fade-in'>
-              Currently @ Kingsoft Office KSUX Team.<br/>
-              Designing WPS Lingxi & WPS AI product experiences.
+              Designing the future of AI × Office at Kingsoft.<br/>
+              Leading WPS AI from 1.0 → 3.0 and incubating WPS Lingxi.
               <br/>
-              Core contributor of Kingsoft Office Design Systems.
+              A core builder of the Kingsoft Office Design System.
             </p>
             <p className='animate-fade-in'>
               🧑🏻‍💻 I design and code.<br/>
