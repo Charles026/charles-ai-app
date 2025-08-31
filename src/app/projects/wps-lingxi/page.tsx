@@ -50,7 +50,7 @@ export default function WpsLingxiReportPage() {
               <h2 className="text-2xl font-semibold text-center">项目背景</h2>
               <div className="mt-8  leading-7 text-base sm:text-base space-y-4">
                 <p>
-                2024 年在 Canvas 与通用 AI Agent 兴起的背景下，WPS 从“AI助手”形态转向Agent + 办公套件深度绑定，据此立项 WPS 灵犀（WPS AI 3.0）。
+                2024 年在 Canvas 与通用 AI Agent 兴起的背景下，WPS 从“AI助手”形态转向 Agent + 办公套件深度绑定，据此立项 WPS 灵犀（WPS AI 3.0）。
                 </p>
               </div>
             </section>
@@ -325,6 +325,35 @@ export default function WpsLingxiReportPage() {
                <Image src={inlineContext} alt="inlineContext" fill className="object-cover" />
              </div>
            </div>
+
+           {/* Ai Agent */}
+
+           <div className="max-w-[886px] mx-auto">
+            <section className="mt-[120px]"> 
+              <h2 className="text-lg font-semibold ">迈向 AI Agent </h2>
+              <div className="mt-4 leading-7 text-base sm:text-base">
+              1. 为何要做Agent？ 
+              <br />
+              <ol className="list-decimal mt-3 text-base leading-7 space-y-3 pl-4 text-neutral-300">
+                <li>
+                  <span className="font-semibold text-white">Agent 的本质优势</span><br />
+                  从被动检索→主动完成目标——能理解上下文、推理、规划并调用工具执行复杂任务。
+                </li>
+                <li>
+                  <span className="font-semibold text-white">通用/垂直 Agent 的缺口</span><br />
+                  多数产品离真实文档创作仍有距离。WPS 的优势在于对创作链路的深度沉淀（公文规则、模板体系、版式与协作语义）。
+                </li>
+                <li>
+                  <span className="font-semibold text-white">对齐用户心智</span><br />
+                  借助 Agent 的规划与信息搜集能力，让一次请求产出高质量、可编辑的成品，满足 WPS 早/晚期大众用户"拿来即用"的预期。
+                </li>
+              </ol>
+              </div>
+               
+            </section>
+           </div>
+
+           
 
            {/* AI UX 的设计要点 */}
            <div className="max-w-[886px] mx-auto">
