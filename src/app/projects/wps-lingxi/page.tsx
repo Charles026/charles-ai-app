@@ -358,20 +358,18 @@ export default function WpsLingxiReportPage() {
              </li>
              </ol>
 
-             {/* Agent 图片垂直展示 */}
-             <div className="mt-8 w-full space-y-6">
-               <div className="relative aspect-[2/1] rounded-[40px] overflow-hidden">
-                 <Image src={agentProgress} alt="Agent Progress" fill className="object-cover" />
-               </div>
-               <div className="relative aspect-[2/1] rounded-[40px] overflow-hidden">
-                 <Image src={agentResult} alt="Agent Result" fill className="object-cover" />
-               </div>
-             </div>
-                 
+         
               </section>
            </div>
 
-           
+           {/* Agent 图片垂直展示 */}
+
+            <div className="mt-8 mx-auto relative w-full sm:w-[1024px] aspect-[2/1] rounded-[40px] overflow-hidden">
+              <Image src={agentProgress} alt="Agent Progress" fill className="object-cover" />
+            </div>
+            <div className="mt-8 mx-auto relative w-full sm:w-[1024px] aspect-[2/1] rounded-[40px] overflow-hidden">
+              <Image src={agentResult} alt="Agent Result" fill className="object-cover" />
+            </div>
 
            {/* AI UX 的设计要点 */}
            <div className="max-w-[886px] mx-auto">
@@ -437,8 +435,6 @@ export default function WpsLingxiReportPage() {
               <br />
               让结果可核验、可比较、可回退：同时展示简要推理链与明确来源，便于自查真伪，降低幻觉风险，提升信任与可控感。
               </div>
-
-              
            </div>
           {/* 双列图片展示 */}
           <div className="mt-8 mx-auto w-full sm:w-[1024px] grid grid-cols-1 sm:grid-cols-2 gap-6">
