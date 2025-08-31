@@ -18,6 +18,8 @@ import lingxiOld from '@/assets/images/wps-lingxi/lingxi-old.png'
 import inputHomepage from '@/assets/images/wps-lingxi/input-homepage.png'
 import inputPpT from '@/assets/images/wps-lingxi/input-ppt.png'
 import copilotPpt from '@/assets/images/wps-lingxi/copilot-ppt.png'
+import agentProgress from '@/assets/images/wps-lingxi/agent-progress.png'
+import agentResult from '@/assets/images/wps-lingxi/agent-result.png'
 // 视频文件直接从 public 目录引用
 
 
@@ -330,27 +332,43 @@ export default function WpsLingxiReportPage() {
 
            <div className="max-w-[886px] mx-auto">
             <section className="mt-[120px]"> 
-              <h2 className="text-lg font-semibold ">迈向 AI Agent </h2>
-              <div className="mt-4 leading-7 text-base sm:text-base">
-              1. 为何要做Agent？ 
-              <br />
+              <h2 className="text-2xl font-semibold ">迈向 AI Agent </h2>
+              <div className="mt-4 leading-7 text-lg sm:text-base font-semibold">
+              <h3 className="text-lg font-semibold">为何要做Agent？ </h3> 
               <ol className="list-decimal mt-3 text-base leading-7 space-y-3 pl-4 text-neutral-300">
-                <li>
-                  <span className="font-semibold text-white">Agent 的本质优势</span><br />
-                  从被动检索→主动完成目标——能理解上下文、推理、规划并调用工具执行复杂任务。
-                </li>
                 <li>
                   <span className="font-semibold text-white">通用/垂直 Agent 的缺口</span><br />
                   多数产品离真实文档创作仍有距离。WPS 的优势在于对创作链路的深度沉淀（公文规则、模板体系、版式与协作语义）。
                 </li>
                 <li>
                   <span className="font-semibold text-white">对齐用户心智</span><br />
-                  借助 Agent 的规划与信息搜集能力，让一次请求产出高质量、可编辑的成品，满足 WPS 早/晚期大众用户"拿来即用"的预期。
+                  借助 Agent 的规划与信息搜集能力，让一次请求产出高质量、可编辑的成品，满足 WPS 早/晚期大众用户&quot;拿来即用&quot;的预期。
                 </li>
               </ol>
               </div>
-               
-            </section>
+              <h3 className="text-lg font-semibold mt-16">体验目标（两个核心）：</h3>
+              <ol className="list-decimal mt-3 text-base leading-7 space-y-3 pl-4 text-neutral-300">  
+
+            <li><span className="font-semibold text-white">高价值产出 + 劳动感知</span><br />
+            长过程研究不可避免 → 通过可观测过程提升“在为我工作”的感知，并交付高质量产物。
+            </li>
+
+                         <li><span className="font-semibold text-white">高成本请求的可控性</span><br />
+             一次请求代价大 → 设计不中断体验、分层容错与降级，保障任务稳态完成。
+             </li>
+             </ol>
+
+             {/* Agent 双列图片展示 */}
+             <div className="mt-8 w-full grid grid-cols-1 sm:grid-cols-2 gap-6">
+               <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden">
+                 <Image src={agentProgress} alt="Agent Progress" fill className="object-cover" />
+               </div>
+               <div className="relative aspect-[4/3] rounded-[40px] overflow-hidden">
+                 <Image src={agentResult} alt="Agent Result" fill className="object-cover" />
+               </div>
+             </div>
+                 
+              </section>
            </div>
 
            
