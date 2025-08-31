@@ -36,7 +36,7 @@ export default function Home() {
             </p>
             <p className='animate-fade-in'>
               Designing the future of AI × Office at Kingsoft.<br/>
-              Leading WPS AI from 1.0 → 3.0 and incubating WPS Lingxi.
+              Leading design of WPS AI from 1.0 → 3.0 and incubating WPS Lingxi.
               <br/>
               A core builder of the Kingsoft Office Design System.
             </p>
