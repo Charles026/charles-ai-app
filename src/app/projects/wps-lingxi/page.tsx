@@ -334,7 +334,7 @@ export default function WpsLingxiReportPage() {
             <section className="mt-[120px]"> 
               <h2 className="text-2xl font-semibold ">迈向 AI Agent </h2>
               <div className="mt-4 leading-7 text-lg sm:text-base font-semibold">
-              <h3 className="text-lg font-semibold">为何要做Agent？ </h3> 
+              <h3 className="text-lg font-semibold">为何要做 Agent？ </h3> 
               <ol className="list-decimal mt-3 text-base leading-7 space-y-3 pl-4 text-neutral-300">
                 <li>
                   <span className="font-semibold text-white">通用/垂直 Agent 的缺口</span><br />
@@ -374,7 +374,7 @@ export default function WpsLingxiReportPage() {
            {/* AI UX 的设计要点 */}
            <div className="max-w-[886px] mx-auto">
             <section className="mt-[120px]">
-              <h2 className="text-lg font-semibold ">AI UX 的设计要点</h2>
+              <h2 className="text-lg font-semibold ">一些值得关注的设计要点</h2>
               <div className="mt-4 leading-7 text-base sm:text-base">
               <span className="font-semibold text-[#76B0FF]">起手式：AI输入框的设计。</span>
               选取嗅探。上传文件。个性参数设定。
@@ -399,7 +399,7 @@ export default function WpsLingxiReportPage() {
            {/* 生成过程的可视化 */}
            <div className="max-w-[886px] mx-auto mt-6">
               <div className="mt-16 leading-7  text-base sm:text-base">
-              <span className="font-semibold text-[#76B0FF]">生成过程的可视化。</span>
+              <span className="font-semibold text-[#76B0FF]">过程的可视化。</span>
               <br />
               大语言模型返回结果总是需要一些时间，利用等待阶段可视化“AI在做什么”（步骤/进度/耗时/可中断），让用户预判结果是否对路，降低焦虑，提升信任与可控感。
               </div>
