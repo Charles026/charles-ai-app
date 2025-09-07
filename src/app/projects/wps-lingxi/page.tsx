@@ -477,10 +477,11 @@ export default function WpsLingxiReportPage() {
              
             </section>
           </div>
-          <div className="max-w-[886px] mx-auto mt-[120px]">
+          <div className="mx-auto mt-[120px] w-full sm:w-[1024px]">
             <div className="my-12 text-2xl font-semibold">
-            <h2 className="text-center mb-8">补充思考</h2>
-            <a  href="https://turbo-charles.notion.site/AI-Agent-2678acdfd76180d99c80f685df522635?pvs=74" target="_blank" className="text-[#76B0FF] hover:underline hover:text-[#769dff]font-semibold text-center">面向泛化 AI Agent：架构、产品模式与设计范式</a>
+            <h2 className="text-center mb-8">补充思考：面向泛化 AI Agent，架构与设计范式</h2>
+            <iframe src="https://turbo-charles.notion.site/ebd/2678acdfd76180d99c80f685df522635" width="100%" height="600" className="rounded-[40px]" allowFullScreen />
+            
             </div>
           </div>
         </main>
