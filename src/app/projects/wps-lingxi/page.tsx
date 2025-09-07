@@ -23,8 +23,6 @@ import agentResult from '@/assets/images/wps-lingxi/agent-result.png'
 // 视频文件直接从 public 目录引用
 
 
-
-
 export default function WpsLingxiReportPage() {
   return (
     <ProjectLayout>
@@ -471,8 +469,19 @@ export default function WpsLingxiReportPage() {
               <br />
               展望下一步：让一致性变成可复用的设计体系（同入口、同语法、同反馈的规则库），把多模态输入（截图、选区嗅探，语音交互）接入 LUI；并把能力延展到会议、知识库等协作场景，让“不中断的生产”发生在更多地方。
               </div>
-              <div className="text-2xl font-semibold my-12"> <div className="inline-block pr-3">试试用WPS灵犀进行创作</div>  <a href="https://lingxi.wps.cn/" target="_blank" className="text-[#76B0FF] hover:underline hover:text-[#769dff]">https://lingxi.wps.cn/</a></div>
+
+              <div className="text-2xl font-semibold my-12">
+                <div className="inline-block pr-3">试试用WPS灵犀进行创作</div>
+                <a href="https://lingxi.wps.cn/" target="_blank" className="text-[#76B0FF] hover:underline hover:text-[#769dff]">https://lingxi.wps.cn/</a>
+              </div>
+             
             </section>
+          </div>
+          <div className="max-w-[886px] mx-auto mt-[120px]">
+            <div className="my-12 text-2xl font-semibold">
+            <h2 className="text-center mb-8">补充思考</h2>
+            <a  href="https://turbo-charles.notion.site/AI-Agent-2678acdfd76180d99c80f685df522635?pvs=74" target="_blank" className="text-[#76B0FF] hover:underline hover:text-[#769dff]font-semibold text-center">面向泛化 AI Agent：架构、产品模式与设计范式</a>
+            </div>
           </div>
         </main>
       </div>
